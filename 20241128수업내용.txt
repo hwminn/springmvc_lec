@@ -1,0 +1,32 @@
+Spring MVC project 
+= Model View Controller  정해진 패턴식 개발이다
+
+
+		<큰틀>
+Client(HTML)--> Controller -->Model-->DB
+View      
+
+[Bean]
+01.singleton ->빈을 하나만 만들어 둔다
+02.prototype-> 빈을 요청할때마다 새롭게 만들어 제공한다 
+---------------------------------------------------------------------
+[constructor-arg]
+생성자를 이용해 값을 전달하는 태그 
+property와 다르게 name이 없기때문에 밸류값을 순서대로 전달해야함
+
+
+Property와 Constructor차이 
+
+Construct생성자? 
+-의존 주입  의존성 있는 객체를 외부에서 주입한다는 뜻 
+
+Property사용시에는 반드시 Setter가 존재해야한다 
+
+[Component] contact이름의 bean으로 만들어짐  
+-> 디폴트 형식의 생성자를 사용! 
+
+
+** 자신이 만든 클래스는 Component 
+** 이미 만들어져있는거? @bean 또는 annotation
+
+NoArgsConstructor? AllArgsConstructor              
